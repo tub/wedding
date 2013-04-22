@@ -240,21 +240,21 @@ section#downloads a em {
   display: block;
 }
 
-section#downloads a.zip {
+section#downloads a.where {
   float: left;
   background-position: 0 0;
 }
 
-section#downloads a.tgz {
+section#downloads a.when {
   float: right;
   background-position: -275px 0;
 }
 
-section#downloads a.zip:hover {
+section#downloads a.where:hover {
   background-position: 0 -197px;
 }
 
-section#downloads a.tgz:hover {
+section#downloads a.when:hover {
   background-position: -275px -197px;
 }
 
