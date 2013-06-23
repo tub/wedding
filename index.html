@@ -1,28 +1,21 @@
 ---
 layout: nil
 is_index: true
+css_id: home
 ---
 
 
 {% include header.html %}
-    {% for post in paginator.posts %}
-      {% include post.html %}
-    {% endfor %}
-	
-	<div class="pagination" id="bottom_page">
-		<ul>
-			{% if paginator.previous_page %}
-				{% if paginator.previous_page == 1 %}
-				<li class="previous"><a href="{{ linkhome }}">&larr; Previous</a></li>
-				{% else %}
-				<li class="previous"><a href="{{ site.baseurl }}/page{{ paginator.previous_page }}">&larr; Previous</a></li>
-				{% endif %}
-			{% endif %}
-				<li><p>Page {{ paginator.page }} of {{ paginator.total_pages }}</p></li>
-			{% if paginator.next_page %}
-				<li class="next"><a href="{{ site.baseurl }}/page{{ paginator.next_page }}">Next &rarr;</a></li>
-			{% endif %}
-		</ul>
-	</div>
+
+
+<h2>Ceremony</h2>
+<p>Please arrive at Coombes Farm at 2:30pm for the ceremony at 3:00pm</p>
+<h2>Reception</h2>
+<p>The reception, also at Coombes Farm, will commence at 5pm and finish at midnight. There will be a cash bar, and bring a dish along for the buffet.</p>
+
+<h2>Wedding List</h2>
+<p>There isn't one, we already have everything we need. We're asking that people bring food along with them, and that's a present in itself</p>
+<p>If you really insist on gifting us something, then additions to our Honeymoon Fund would be appreciated</p>
+
 
 {% include footer.html %}

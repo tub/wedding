@@ -4,10 +4,11 @@
 	<meta charset="utf-8" />
 	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
 
-	<link rel="stylesheet" href="{{ site.baseurl }}/bootstrap.min.css">
-	<link rel="stylesheet" href="{{ site.baseurl }}/css.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/overrides.css">
 </head>
-<body>
+<body id="{{ page.css_id }}">
 
 	{% if site.baseurl == null %}
 		{% assign linkhome = "/" %}
@@ -15,8 +16,14 @@
 		{% assign linkhome = site.baseurl %}
 	{% endif %}
 
-	<header>
-	<h1><a href="{{ linkhome }}">{{ site.name }}</a></h1>
+<div class="container main-container">
+ 	<header>
+    <h1><span class="name">Toby&nbsp;<strong>&amp;</strong>&nbsp;<span class="name">Helen</span> are getting&nbsp;<span class="married">Married</span></h1>
 	</header>
 
-	<div class="container">
+<div class="where-when">
+  <time datetime="2013-09-13" class="date">On <strong>Friday the 13<sup>th</sup> of September</strong></time>
+  <span class="place"><a href="http://www.coombes.co.uk/">at&nbsp;Coombes&nbsp;Farm, West&nbsp;Sussex</a></span>
+</div>
+
+  {% include nav.html %}
