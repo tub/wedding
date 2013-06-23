@@ -2,5 +2,6 @@
 permalink: /:year/:title/
 paginate: 10
 exclude: []
-name: Jekyll Bootstrap
-baseurl: /jekyll-bootstrap
+include: [assets, .htaccess]
+name: Toby & Helen's Wedding
+#baseurl: /jekyll-bootstrap
