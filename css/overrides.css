@@ -51,7 +51,8 @@ header, .where-when {
 /* Copied from navbar active in bootstrap */
 body#map .map,
 body#home .home,
-body#camping .camping
+body#camping .camping,
+body#rsvp .rsvp
 {
     background-color: #E5E5E5;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125) inset;
@@ -81,4 +82,27 @@ body#camping .camping
     right: 0px;
     top: 43%;
     width: 10%;
+}
+
+.navbar-inner{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(200, 200, 200, 0.4));
+  background-color: transparent;
+  box-shadow:none;
+  padding: 0;
+}
+
+.topnav {
+  height: auto;
+}
+
+@media (max-width: 979px) {
+  .nav-collapse .nav > li {
+    float: left;
+}
+}
+
+@media (max-width : 320px) {
+    .nav-collapse .nav > li {
+    float: none;
+}
 }
