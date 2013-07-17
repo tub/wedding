@@ -48,6 +48,32 @@ header, .where-when {
   margin-top: 1em;
 }
 
+/* calendar */
+.days-remaining{
+  float:right;
+  text-align: center;
+  line-height: auto;
+  opacity: 0.8;
+}
+.days-remaining strong{
+  display: block;
+  background: white;
+  border-radius: 0 0 10px 10px;
+  font-size: 80px;
+  line-height: 80px;
+  font-family: eccentricregular,serif;
+  border: 1px solid #D4D4D4;
+}
+.days-remaining p{
+  display: block;
+  color: white;
+  background: red;
+  border-radius: 10px 10px 0 0;
+  padding: 4px 15px;
+  margin: 0;
+}
+
+
 /* Copied from navbar active in bootstrap */
 body#map .map,
 body#home .home,

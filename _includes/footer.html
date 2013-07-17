@@ -1,4 +1,30 @@
 	</div><!--container-->
+  
+  <script>
+    function remove(id) {
+        return (elem=document.getElementById(id)).parentNode.removeChild(elem);
+    }
+
+    var target = new Date(2013, 8, 13, 15);
+    var now = Date.now();
+
+    //default to days
+    var val = (target - now) / 86400000;
+    
+    // if within 2 days, display hours
+    if(val < 2){
+      val = val * 24;
+      document.getElementById("units").innerHTML = "hours";
+    }
+
+    document.getElementById("daysleft").innerHTML = Math.ceil(val);
+
+    //if date passed, remove calendar
+    if(val < 0){
+      remove("cal");
+    }
+
+</script>
 
 </body>
 </html>
